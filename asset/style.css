@@ -10,12 +10,36 @@
   width: 150px;
    border-radius: 20px;
 }
-.jumbotron{
- margin-left: 50px;
- margin-right: 50px;
-  border-radius:50px;
+.jumbotron-fluid{
+  margin-top: 25px;
+ margin-left: 40px;
+ margin-right: 40px;
+border-radius:40px;
+
 }
 .text{
   text-align: center;
  
 }
+.feature{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  border: black 2rem;
+}
+.img-fluid.product{
+width: 50px;
+}
+/* .scrollTop{
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  display: grid;
+  height: 70px;
+  width: 70px;
+  place-items: center;
+ 
+  background-color: green;
+  border-radius: 5px;
+  z-index: var(--z-tolltip);
+} */
