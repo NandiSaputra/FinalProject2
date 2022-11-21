@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" id="home">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +22,7 @@
     integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
   <!-- <div class="container">
    
@@ -50,24 +52,130 @@
             <a class="nav-link" href="#contact">CONTACT US</a>
           </li>
       </div>
+      <!-- Modal -->
+      <div class="modal" id="exampleModal" tabindex="-1" aria-placeholder="exampleModalLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">LOGIN</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary" id="login">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+      <!-- Modal Sign Up -->
+      <div class="modal" id="modalSignUp" tabindex="-1" aria-placeholder="exampleModalLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">SILAHKAN DAFTAR</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formSignup">
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="InputNama" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="InputEmailSignUp" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="InputPasswordSignUp">
+                </div>
+                <button type="submit" class="btn btn-primary" id="SignUp">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <button type="button" class="btn btn-outline-primary btn-sm   mx-2">Login</button>
-        <button type="button" class="btn btn-secondary btn-sm mx-2">Sign Up</button>
+        <button type="button" class="btn btn-outline-primary btn-sm   mx-2" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Login</button>
+        <button type="button" class="btn btn-secondary btn-sm mx-2" data-bs-toggle="modal"
+          data-bs-target="#modalSignUp">Sign Up</button>
       </div>
     </div>
   </nav>
   <!-- End Navbar -->
+  <!-- Modal Pre Order -->
+  <div class="modal" id="modalPreOrder" tabindex="-1" aria-placeholder="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SILAHKAN Pre Order</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formPre">
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="InputNamaPre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmailPre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">No whatsUp</label>
+              <input type="number" class="form-control" id="InputPhone">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example" id="selectPre" placeholder="Pilih Paket">
+                <option value="1">Satuan</option>
+                <option value="2">Team</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="PreOrder">Order Now</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
   <!-- Jumbotron -->
   <div class="jumbotron-fluid shadow-lg">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class=" text col-md-6 col-lg-5">
           <h1 class="display-4">Kit Sel</h1>
-          <p class="lead">Mau bikin jersey futsal, sepeda, basket volly dan jersey keren lainnya dengan harga murah dan
-            bahan yang premium yang
-            adem? Yuk Pre Order</p>
+          <h3>Bisa Bikin jersey <span class="typed"></span></h3>
           <p class="lead">
-            <a class="btn btn-success btn-lg" href="#" role="button">Pre Order</a>
+            <a class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalPreOrder">Pre Order</a>
           </p>
         </div>
         <div class="col-md-6 col-lg-5">
@@ -82,96 +190,109 @@
   <!-- End Jumboton -->
   <div class="feature" id="product">
     <h1>PRODUCT</h1>
-    <p>pro</p>
+
     <div class="row justify-content-between">
-      <div class="col-md-6">
-        <h3>Beberapa Product Kami</h3><br>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="gambar/jersey-product.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block text-dark">
-                <h5>Jersey Sepak Bola</h5>
-                <p>jersey dengan bahan premium dan bisa custome sesuai dengan selera anda</p>
-                <button type="button" class="btn btn-primary">Lihat Detail</button>
-              </div>
 
-            </div>
-            <div class="carousel-item">
-              <img src="gambar/jersey running.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block text-dark">
-                <h5>Jersey running</h5>
-                <p>jersey yang cocok buat running dan joging dengan bahan yang premium dan tidak mudah gerah dan bisa
-                  custom
-                  semau anda</p>
-                <button type="button" class="btn btn-primary">Lihat Detail</button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="gambar/futsal.jpg" class="d-block w-100" alt="...">
-              <!-- https://ae01.alicdn.com/kf/H3c7b6bfbf530492aa0a8ad3a35080ca5d/Kaos-sepak-bola-pembuat-sepak-bola-jersey-custom-membuat-sendiri-desain-sublimasi-perlengkapan-sepak-bola.jpg -->
-              <div class="carousel-caption d-none d-md-block text-dark">
-                <h5>jersey futsal</h5>
-                <p>bahan premium dan bisa custom sesuai selera anda</p>
-                <button type="button" class="btn btn-primary">Lihat Detail</button>
-              </div>
-
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <h3>Beberapa Product Kami</h3><br>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gambar/jersey-product.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Jersey Sepak Bola</h5>
+              <p>jersey dengan bahan premium dan bisa custome sesuai dengan selera anda</p>
+              <button type="button" class="btn btn-primary">Lihat Detail</button>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/jersey running.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Jersey running</h5>
+              <p>jersey yang cocok buat running dan joging dengan bahan yang premium dan tidak mudah gerah dan bisa
+                custom
+                semau anda</p>
+              <button type="button" class="btn btn-primary">Lihat Detail</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/futsal.jpg" class="d-block w-100" alt="...">
+            <!-- https://ae01.alicdn.com/kf/H3c7b6bfbf530492aa0a8ad3a35080ca5d/Kaos-sepak-bola-pembuat-sepak-bola-jersey-custom-membuat-sendiri-desain-sublimasi-perlengkapan-sepak-bola.jpg -->
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>jersey futsal</h5>
+              <p>bahan premium dan bisa custom sesuai selera anda</p>
+              <button type="button" class="btn btn-primary">Lihat Detail</button>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="col-md-6">
+      <div class="container describe">
         <div class="row">
-          <div class="col-md-4">
-            <img src="gambar/jersey.jpg" class="img-fluid" alt="">
-            <h4>New Design</h4>
-            <p>Ribuan design- design terbaru dan model -model dari tim tim sepak bola dunia bisa kamu dapatkan </p>
+          <div class="col-md-4 ">
+            <div class="card ">
+              <img src="gambar/jersey.jpg" class="img-fluid" alt="">
+              <h4>New Design</h4>
+              <p>Ribuan design- design terbaru dan model -model dari tim tim sepak bola dunia bisa kamu dapatkan </p>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="card ">
+              <img src="gambar/kualitas.jpg" class="img-fluid" alt="">
+              <h4>Kualiats Premium</h4>
+              <p>Kualiatas bahan yang digunakan sudah standar internasioanl yang sudah diuji kualitasnya </p>
+            </div>
           </div>
           <div class="col-md-4">
-            <img src="gambar/kualitas.jpg" class="img-fluid" alt="">
-            <h4>Kualiats Premium</h4>
-            <p>Kualiatas bahan yang digunakan sudah standar internasioanl yang sudah diuji kualitasnya </p>
+            <div class="card ">
+              <img src="gambar/harga hemat.jpg" class="img-fluid" alt="">
+              <h4>Harga Murah</h4>
+              <p>denagan kualitas premium bukan berarti harga mahal, harga jersey kami terjangkau oleh dompet</p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="gambar/harga hemat.jpg" class="img-fluid" alt="">
-            <h4>Harga Murah</h4>
-            <p>denagan kualitas premium bukan berarti harga mahal, harga jersey kami terjangkau oleh dompet</p>
+          <div class="col-md-4 ">
+            <div class="card ">
+              <img src="gambar/paket.jpg" class="img-fluid" alt="">
+              <h4>Dikirim Seluruh Indonesia</h4>
+              <p>Dengan kerjasama dengan ekpedisi-ekpedisi yang ada di Indonesia</p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="gambar/paket.jpg" class="img-fluid" alt="">
-            <h4>Dikirim Seluruh Indonesia</h4>
-            <p>Dengan kerjasama dengan ekpedisi-ekpedisi yang ada di Indonesia</p>
+          <div class="col-md-4 ">
+            <div class="card">
+              <img src="gambar/gratis ongkir.png" class="img-fluid" alt="">
+              <h4>Gratis Ongkir</h4>
+              <p>Biaya pengiriman kami tanggung dengan ketentuan berapa banyak pesanan dibuat </p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="gambar/gratis ongkir.png" class="img-fluid" alt="">
-            <h4>Gratis Ongkir</h4>
-            <p>Biaya pengiriman kami tanggung dengan ketentuan berapa banyak pesanan dibuat </p>
+          <div class="col-md-4 ">
+            <div class="card">
+              <img src="gambar/original.jpg" class="img-fluid" alt="">
+              <h4>Barang Ori</h4>
+              <p>jersey Club-club eropa di jamin ori dan bahan kualitas premium dan kualitas tinggi</p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="gambar/original.jpg" class="img-fluid" alt="">
-            <h4>Barang Ori</h4>
-            <p>jersey Club-club eropa di jamin ori dan bahan kualitas premium dan kualitas tinggi</p>
-          </div>
+        
         </div>
       </div>
+     
     </div>
     <section class="company" style="margin-top:150px ;" id="about">
       <div class="container-fluid position-relative" style="margin-top: 100px;">
@@ -427,6 +548,10 @@
   <a href="#" class="scrollup">Scroll</a>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.min.js"
     integrity="sha512-npNAZmgci8XSVsrc4kSwsbKovbwBU0r9Csm8n3D+g9x0Z08kNuKOuPYlNzo9LPFYXaATPfWRtaCkoOcrCHvqGg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
