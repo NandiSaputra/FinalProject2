@@ -33,12 +33,80 @@
       <i class="fa-solid fa-arrow-up"></i>
     </a>
   </div> -->
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-placeholder="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">LOGIN</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary" id="login">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+  
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+  <!-- Modal Sign Up -->
+  <div class="modal" id="modalSignUp" tabindex="-1" aria-placeholder="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SILAHKAN DAFTAR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formSignup">
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="InputNama" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmailSignUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPasswordSignUp">
+            </div>
+            <button type="submit" class="btn btn-primary" id="SignUp">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg ">
     <div class="container ">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto ">
@@ -55,72 +123,6 @@
             <a class="nav-link" href="#contact">CONTACT US</a>
           </li>
       </div>
-      <!-- Modal -->
-      <div class="modal" id="exampleModal" tabindex="-1" aria-placeholder="exampleModalLabel">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">LOGIN</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="form">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary" id="login">Submit</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal -->
-      <!-- Modal Sign Up -->
-      <div class="modal" id="modalSignUp" tabindex="-1" aria-placeholder="exampleModalLabel">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">SILAHKAN DAFTAR</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="formSignup">
-                <div class="mb-3">
-                  <label for="exampleInputEmail" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="InputNama" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="InputEmailSignUp" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="InputPasswordSignUp">
-                </div>
-                <button type="submit" class="btn btn-primary" id="SignUp">Submit</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="login">Save changes</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <button type="button" class="btn btn-outline-primary btn-sm   mx-2" data-bs-toggle="modal"
           data-bs-target="#exampleModal">Login</button>

@@ -3,6 +3,9 @@
  padding: 0;
  margin: 0;
 }
+.navbar-toggler{
+  color: aqua;
+}
 .btn.btn-outline-primary{
  width: 150px;
  border-radius: 20px;
