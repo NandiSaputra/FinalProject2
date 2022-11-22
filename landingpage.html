@@ -7,7 +7,7 @@
   <title>KITS SELL WEB</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="asset/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.min.css"
     integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -172,7 +175,7 @@
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class=" text col-md-6 col-lg-5">
-          <h1 class="display-4">Kit Sel</h1>
+          <h1 class="display-4">Kits Sell</h1>
           <h3>Bisa Bikin jersey <span class="typed"></span></h3>
           <p class="lead">
             <a class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalPreOrder">Pre Order</a>
@@ -257,7 +260,7 @@
           <div class="col-md-4 ">
             <div class="card ">
               <img src="gambar/kualitas.jpg" class="img-fluid" alt="">
-              <h4>Kualiats Premium</h4>
+              <h4>Kualitas Premium</h4>
               <p>Kualiatas bahan yang digunakan sudah standar internasioanl yang sudah diuji kualitasnya </p>
             </div>
           </div>
@@ -292,261 +295,216 @@
         
         </div>
       </div>
+      
+      </header><!-- /header -->
+
+    <main>
+      
+      <!--BANNER-->
+      <section class="banner">
+        <div class="container">
+          <div class="row justify-content-center align-items-center pad-tab" data-aos="fade-up">
+            <div class="banner-text col-sm-12 col-md-6">
+              <p class="text-second">Apa itu Kits Sell ?</p>
+              <h1 class="text-main secondary-col">Website untuk Pembelian Jersey Berkualitas?
+              </h1>
+              <p class="text-second">Disini kita dapat membeli jersey original dan berkualitas  </p>
+              <a href="#" class="btn-rounded text-main">Beli Sekarang</a>
+            </div>
+            <div class="banner-image col-sm-12 col-md-6 d-none d-sm-block">
+              <img src="assets/images/image.png" alt="image-banner" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    
+  
+      <!--PRODUCTS-->
+      <section class="products-section">
+        <div class="container">
+          <div class="text-products row align-items-center">
+            <div class="title-product col-7 col-sm-6 col-md-9">
+              <h2 class="text-main">Jelajahi Jersey</h2>
+            </div>
+            <div class="text-show-all text-right text-main col-5 col-sm-6 col-md-3 pr-md-0">
+              <a href="#">
+                <p>SHOW ALL <img src="assets/icons/arrow-2.png" alt="icon-arrow"></p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="products row justify-content-center">
+            <div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up">
+              <div class="bg-white">
+                <div class="product-image text-center">
+                  <img src="assets/images/prod-1.png" alt="product" class="img-fluid">
+                </div>
+                <div class="desc-product">
+                  <a href="#">
+                    <p class="text-second">Basic</p>
+                    <p class="text-second">(Celana)</p>
+                    <p class="text-second">$ 10</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+            data-aos-delay="100">
+              <div class="bg-white">
+                <div class="product-image text-center">
+                  <img src="assets/images/prod-4.png" alt="product" class="img-fluid">
+                </div>
+                <div class="desc-product">
+                  <a href="#">
+                    <p class="text-second">Standard</p>
+                    <p class="text-second">(Jersey + Celana)</p>
+                    <p class="text-second">$ 15</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product col-12 col-sm-12 col-md-6 col-lg-3 mb-md-4 md-lg-0" data-aos="fade-up"
+            data-aos-delay="200">
+              <div class="bg-white">
+                <div class="product-image text-center">
+                  <img src="assets/images/prod-3.png" alt="product" class="img-fluid">
+                </div>
+                <div class="desc-product">
+                  <a href="#">
+                    <p class="text-second">Premium</p>
+                    <p class="text-second">(Jersey + Merchandise)</p>
+                    <p class="text-second">$ 25</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    
      
-    </div>
-    <section class="company" style="margin-top:150px ;" id="about">
-      <div class="container-fluid position-relative" style="margin-top: 100px;">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="company-title">
-              <h1>Increase the <br> efficiency within <br> your company</h1>
-              <span>Our app is the great way for you to start <br> getting more tasks done.</span>
+       
+      </section>
+        <section class="container" id="contact">
+          <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-12 col-xl-7 py-4">
+          
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63366.4536254982!2d110.33383395820309!3d-6.961654199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f4b8c78ad303%3A0xf080546fc48eefed!2sKaos%20Jersey!5e0!3m2!1sid!2sid!4v1669035964151!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-12 col-xl-5 py-4">
+            <h4 class="display-6 text-center">Hubungi Kami </h4>
+            <div class="mb-3">
+            <label for="exampleFormControlInputFullName" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="exampleFormControlInputFullName" placeholder="John Doe" />
+            <div class="mb-3">
+            <label for="exampleFormControlInputFullName" class="form-label">Alamat Email</label>
+            <input type="text" class="form-control" id="exampleFormControlInputFullName" placeholder="nama@example.com" />
             </div>
-            <div class="company-button">
-              <span class="btn1">Get the app</span>
+            <div class="mb-3">
+            <label for="exampleFormControlInputEmail" class="form-label">Subject</label>
+            <input type="email" class="form-control" id="exampleFormControlInputEmail" placeholder="Subject" />
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Pesan yang disampaikan:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <a class="btn btn-secondary btn-lg" href="#contact" role="button">Kirim</a>
+          </div>
+          </div>
+        </section>
+  
+    <footer>
+      <div class="container">
+        <div class="footer-content row mb-4">
+          <div class="footer-brand col-12 col-sm-12 col-md-3 col-lg-3">
+            <div>
+              <h1 class="text-main">KITS SELL</h1>
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <div class="container position-relative ">
-              <div class="card1">
-                <span class="circle"></span>
-                <i class="bi bi-calendar"></i>
-                <span class="comp-text">Daily Kits Sell</span>
-                <span class="com-des">2:30 PM 15 Apr 2022</span>
-                <span class="com-crl"></span>
-                <span class="com-crl" style="left: 50px;"></span>
-                <span class="com-crl" style="left: 80px;"></span>
-                <span class="com-crl" style="left: 110px;"></span>
-                <span class="crl-text">AU</span>
-                <span class="crl-text" style="left: 62px;">AU</span>
-                <span class="crl-text" style="left: 93px;">AU</span>
-                <span class="crl-text" style="left: 123px;">AU</span>
-              </div>
-              <div class="card2 ">
-                <span class="circle"></span>
-                <i class="bi bi-calendar"></i>
-                <span class="comp-text">Daily Emails</span>
-                <span class="com-des">8:30 AM 28 Apr 2022</span>
-                <span class="com-crl"></span>
-                <span class="com-crl" style="left: 50px;"></span>
-                <span class="com-crl" style="left: 80px;"></span>
-                <span class="com-crl" style="left: 110px;"></span>
-                <span class="crl-text">AU</span>
-                <span class="crl-text" style="left: 62px;">AU</span>
-                <span class="crl-text" style="left: 93px;">AU</span>
-                <span class="crl-text" style="left: 123px;">AU</span>
-
-              </div>
-              <div class="card3">
-                <span class="circle"></span>
-                <i class="bi bi-calendar"></i>
-                <span class="comp-text">Marketing Call</span>
-                <span class="com-des">4:45 PM 30 May 2022</span>
-                <span class="com-crl"></span>
-                <span class="com-crl" style="left: 50px;"></span>
-                <span class="com-crl" style="left: 80px;"></span>
-                <span class="com-crl" style="left: 110px;"></span>
-                <span class="crl-text">AU</span>
-                <span class="crl-text" style="left: 62px;">AU</span>
-                <span class="crl-text" style="left: 93px;">AU</span>
-                <span class="crl-text" style="left: 123px;">AU</span>
-
-              </div>
-              <div class="card4">
-                <span class="circle"></span>
-                <i class="bi bi-calendar"></i>
-                <span class="comp-text">Project Meeting</span>
-                <span class="com-des">5:45 PM 1 Jun 2022</span>
-                <span class="com-crl"></span>
-                <span class="com-crl" style="left: 50px;"></span>
-                <span class="com-crl" style="left: 80px;"></span>
-                <span class="com-crl" style="left: 110px;"></span>
-                <span class="crl-text">AU</span>
-                <span class="crl-text" style="left: 62px;">AU</span>
-                <span class="crl-text" style="left: 93px;">AU</span>
-                <span class="crl-text" style="left: 123px;">AU</span>
-
-              </div>
-              <div class="card5">
-                <span class="circle"></span>
-                <i class="bi bi-calendar"></i>
-                <span class="comp-text">Presentation</span>
-                <span class="com-des">10:15 AM 2 Jul 2022</span>
-                <span class="com-crl"></span>
-                <span class="com-crl" style="left: 50px;"></span>
-                <span class="com-crl" style="left: 80px;"></span>
-                <span class="com-crl" style="left: 110px;"></span>
-                <span class="crl-text">AU</span>
-                <span class="crl-text" style="left: 62px;">AU</span>
-                <span class="crl-text" style="left: 93px;">AU</span>
-                <span class="crl-text" style="left: 123px;">AU</span>
-
-
-              </div>
-              <div class="card6">
-                <span class="circle"></span>
-                <i class="bi bi-calendar"></i>
-                <span class="comp-text">Sales Call</span>
-                <span class="com-des">12:30 PM 5 May 2022</span>
-                <span class="com-crl"></span>
-                <span class="com-crl" style="left: 50px;"></span>
-                <span class="com-crl" style="left: 80px;"></span>
-                <span class="com-crl" style="left: 110px;"></span>
-                <span class="crl-text">AU</span>
-                <span class="crl-text" style="left: 62px;">AU</span>
-                <span class="crl-text" style="left: 93px;">AU</span>
-                <span class="crl-text" style="left: 123px;">AU</span>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pricing ">
-      <div class="container-fluid ">
-        <div class="container p-5">
-          <div class="row ">
-            <div class="col-lg-12 col-md-12 m-auto">
-              <div class="sub-heading text-center mt-5">
-                <h2>Explore our kit prices here</h2>
-                <span>The Official kits and merchandise to support your club. <br> market for everyone.</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-4  col-sm-12 mb-4">
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <div class="text-center p-3">
-                    <h5 class="card-title">Basic</h5>
-                    <br><br>
-                    <span class="h2">$9</span> <br>
+  
+          <div class="footer-items-box col-12 col-sm-12 col-md-9 col-lg-9">
+            <div class="footer-items row">
+              <div class="footer-item col-12 col-sm-12 col-md-4">
+                <div>
+                  <div class="footer-item-content">
+                    <h3 class="text-main">Store</h3>
+                    <p><a href="#">Basic</a></p>
+                    <p><a href="#">Standard</a></p>
+                    <p><a href="#">Premium</a></p>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Get Buy</button>
-                </div>
               </div>
-            </div>
-            <div class="col-lg-4  col-sm-12 mb-4">
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <div class="text-center p-3">
-                    <h5 class="card-title">Premium</h5>
-                    <br><br>
-                    <span class="h2">$29</span> <br>
+    
+              <div class="footer-item col-12 col-sm-12 col-md-4">
+                <div>
+                  <div class="footer-item-content">
+                    <h3 class="text-main">Business</h3>
+                    <p><a href="#">kitsell</a>@gmail.com</a></p>
+                    <p><a href="#">021-1234-9999</a></p>
+                    <p><a href="#">Semarang, Indonesia</a></p>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Get Buy</button>
-                </div>
               </div>
-            </div>
-
-            <div class="col-lg-4  mb-4 col-sm-12 ">
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <div class="text-center p-3">
-                    <h5 class="card-title">Enterprise</h5>
-                    <br><br>
-                    <span class="h2">$129</span> <br>
+    
+              <div class="footer-item col-12 col-sm-12 col-md-4">
+                <div>
+                  <div class="footer-item-content">
+                    <h3 class="text-main">Social</h3>
+                    <a href="#" class="ig-icon">
+                      <img src="assets/images/instagram.png" alt="ig" class="img-fluid">
+                    </a>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Get buy</button>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="copyright-section border-top">
+          <div class="row">
+            <div class="col-12">
+              <div class="copyright-content text-center mt-4">
+                <p class="text-second">Kits Sell Website Copyright &copy; 2022 All Rights Reserved</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-  </section>
-  <section id="contact">
-    <div class="container-fluid " style="margin-right: 100px;">
-      <div class="container newsletter ">
-        <div class="row mb-5">
-          <div class="col-lg-5 col-md-8 m-auto ">
-            <div class="sub-heading text-center ">
-              <h2 class="mb-3" style="margin-top: 50px;">Sign up to our newsletter</h2>
-              <span>We offer one of the most competitive prices on the <br> market for everyone.</span>
-            </div>
-          </div>
-
-        </div>
-        <div class="row">
-          <div class="col-lg-5  col-md-12 mx-auto ">
-            <div class="input-group mb-3 ">
-              <input type="text" class="form-control " placeholder="Enter your email address"
-                aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-news" type="button" id="button-addon2"><i
-                  class="bi bi-arrow-right-short "></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <section class="">
-      <div class="container text-center text-lg-center mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text fw-bold mb-4 ">
-              KITSSELLWEB
-            </h6>
-            <p>
-              ©2022 - All rights <br> reserved
-            </p>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              Product
-            </h6>
-            <p class="text-start ms-5">
-              <a href="#!" class="text">Benefits </a>
-            </p>
-            <p class="text-start ms-5">
-              <a href="#!" class="text">Feedback</a>
-            </p>
-            <p class="text-start ms-5">
-              <a href="#!" class="text">Features</a>
-            </p>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              About
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Company</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Team</a>
-            </p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Support</h6>
-            <p>
-              <a href="#!" class="text-reset">Get Buy</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Terms of service</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="text-center p-4" style="background-color: #dde5f7;">
-      © 2022 Copyright:
-      <a class="text-reset fw-bold" href="#">KitsSellWeb</a>
-    </div>
-  </footer>
-
-  <a href="#" class="scrollup">Scroll</a>
-
+    </footer>
+  
+  
+      
+  
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="library/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="script/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  </html> 
+    
+     
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
